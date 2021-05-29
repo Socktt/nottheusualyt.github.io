@@ -4,11 +4,48 @@
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
     </head>
-    <body onload="WriteNameOfAccount()">
+    <body onload="initBank()">
         <div class="TopBar">
             <h1>Your account</h1>
             <h3 id="AccountLoggedInText"></h3>
             <a href="index.html">logout</a>
+        </div>
+        <div class="Options">
+            <a href="#" class="TransferHref">Transfer</a>
+            <a href="#" class="CryptoHref">Deposit Crypto</a>
+        </div>
+        <div class="Balance">
+            <h3>Account Balance: </h3>
+            <h2 id="balstr">100 123 453.95$</h2> 
+        </div>
+        <div class="Transactions">
+            <h3>Your recent Transactions:</h3>
+            <table class="center" id="TransactionList">
+                <tr>
+                    <th>Transaction Name</th>
+                    <th>Transaction Type</th>
+                    <th>Price</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>WinRar</td>
+                    <td>Debit</td>
+                    <td>39.99$</td>
+                    <td>28/5/2021</td>
+                </tr>
+                <tr>
+                    <td>Wendys</td>
+                    <td>Debit</td>
+                    <td>249.99$</td>
+                    <td>28/5/2021</td>
+                </tr>
+                <tr>
+                    <td>McDonalds</td>
+                    <td>Debit</td>
+                    <td>9000.01$</td>
+                    <td>27/5/2021</td>
+                </tr>
+            </table>
         </div>
     </body>
 </html>
