@@ -15,8 +15,13 @@ function initBank(){
 }
 
 function randGenBal() {
-    var bal = Math.floor(Math.random()*1000000) + 1000 + (Math.random()).toFixed(2);
-    document.getElementById("balstr").innerHTML = bal + "$";
+    // var bal = Math.floor(Math.random()*100000) + 1000 + (Math.random()).toFixed(2);
+    var testrand = new Math.seedrandom(document.cookie);
+    var bal = (testrand()*100000).toFixed(0) + (testrand()).toFixed(2);
+    var parts = bal.toString().split(".");
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    var fixedBal = parts.join(".");
+    document.getElementById("balstr").innerHTML = fixedBal + "$";
     return 0;
 }
 
@@ -24,11 +29,13 @@ function randGenPurchases() {
     var companies = ["Wendys", "MacDonalds", "Starbucks", "Walmart", "Google Play", "Lee Valley", "Costco", "Harveys", "GMC"];
     var TrnsList = document.getElementById("TransactionList");
     var TrnsDate = 27;
+    var testrand = new Math.seedrandom(document.cookie);
     for(x=0;x<=25;x++){
-        var company = companies[Math.floor(Math.random() * 9).toFixed(0)];
-        var price = Math.floor(Math.random() * 1000) + 0.99;
+        var testrand = new Math.seedrandom(document.cookie + x);
+        var company = companies[Math.floor(testrand() * 9).toFixed(0)];
+        var price = Math.floor(testrand() * 200) + 0.99;
         var col = document.createElement("TR");
-        if(Math.random() * 3 > 1){
+        if(testrand() * 3 > 1){
             TrnsDate--;
         }
         TrnsList.appendChild(col);
