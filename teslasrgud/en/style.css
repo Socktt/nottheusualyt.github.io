@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #202020;
+    color: #fefefe;
+    /*background-image: url("https://img2.mashed.com/img/gallery/why-you-should-avoid-eating-raw-beans/eating-raw-beans-can-harm-you-1607082051.jpg");*/
+    background-image: url("https://i.imgur.com/8N7F2cL.png");
+}
+
+.TopBarE {
+    text-align: center;
+    padding: 150px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 500px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://car-images.bauersecure.com/pagefiles/78015/tesla_roadster_01.jpg");
+}
+
+.TopBar {
+    text-align: center;
+    padding: 150px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+.TopTopBar {
+    background: rgba(32, 32, 32, 0.7);
+    padding: 10px;
+    border: 1px transparent;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 550px;
+}
+
+.TopTopBar a {
+    background-color: #303030;
+    background: linear-gradient(to right, red, purple);
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 1800px;
+    text-decoration: none;
+    color: #fefefe;
+}
+
+.textBoxA {
+    position: absolute;
+    top: 675px;
+    right: 100px;
+    left: 1000px;
+    bottom: 200px;
+    text-align: right;
+    background-color: #303030;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.textBoxB {
+    position: absolute;
+    top: 675px;
+    right: 1000px;
+    left: 100px;
+    bottom: 200px;
+    text-align: left;
+    background-color: #303030;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.TopTopBar img {
+    max-width: 65px;
+    position: absolute;
+    left: 10px;
+}
+
+.TopBarText {
+    position: absolute;
+    right: 50px;
+    left: 1500px;
+    bottom: 100px;
+    top: 150px;
+    text-align: right;
+    background-color: #303030;
+    padding: 20px;
+    border: 1px transparent;
+    border-radius: 10px;
+}
+
+.ManifestoText {
+    position: absolute;
+    right: 600px;
+    left: 600px;
+    top: 200px;
+    text-align: center;
+    background: linear-gradient(to right, rgb(255, 0, 0), purple);
+    padding: 20px;
+    border: 1px transparent;
+    border-radius: 20px;
+}
